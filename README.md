@@ -394,3 +394,5 @@ Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no tom
   <source src="https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing" type="video/mp4">
   Tu navegador no soporta video HTML5.
 </video>
+
+[Aquí se puede ver el video de la prueba con el Robot real:](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
