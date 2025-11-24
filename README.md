@@ -374,9 +374,29 @@ ADD2 --> D
     </p>
 
 
+
 ## Resultados
 
-* Video de simulaci´on en EPSON RC+ 7.0 mostrando la trayectoria completa y evidencia de su implementaci´on física en el manipulador EPSON T3-401S.
+El resultado del trabajo realizado se resume en el siguiente video, en donde se incluye:
+* Simulación en EPSON RC+ 7.0 de la trayectoria realizada, con una visión adicional de la salida que controla el paso de aire a las ventosas.
+* Movimiento a los puntos escogidos en el robot real.
+* Ejecución real de la tarea en el robot EPSON T3-401S
 
-* Video demostrativo del gripper neum´atico levantando un huevo de manera segura.
-\\
+Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no toma correctamente los huevos y por ello se mueven a mano al lugar a donde serían movidos. Para evitar esto y asegurar un movimiento preciso y confiable, se recomienda utilizar otro tipo de ventosas, que sean más adecuadas para la superficie a agarrar.
+
+<video width="1080" height="720" controls>
+  <source src="https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing" type="video/mp4">
+  Tu navegador no soporta video HTML5.
+</video>
+
+[Aquí se puede ver el video de la simulacion y de la prueba con el Robot real :](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
+
+## Conclusiones
+
+* Se encontro que el software de los robots Epson tiene una interfaz amigable que permite programar rutinas con un lenguaje muy intutitivo conectandose al hardware de una manera muy simple.
+
+* Se pudo comprobar que una simple ventosa neumatica acompañada de un acople prootipado por manufactura aditiva basica(impresion 3D) se puede integrar con el Epson para ejecutar rutinas de paletizado de objetos no tan pesados como ping pongs o pelotas(inclusive huevos).
+
+* Se demostro que el buen uso de la IA puede ayudar a generar trayectorias complejas en relativo poco tiempo (como en este caso con la rutina en forma de caballo de ajedrez), permitiendo aumentar la productividad y dedicar tiempo a otras tareas como el diseño del gripper y la puesta a punto del Hardware involucrado.
+
+ * Como se pudo apreciar durante la ejecuacion real de la rutina la cubeta de huevos se movia mucho, razon por la cual en algunas ocasiones no se sujetaba bien el ping pong. Para resolver esto se propone fijar la cubeta con cinta o alguna tipo de adhesivo. Adiocnalmente se propone tener un sensor de vacio para poder corroborar el agarre del objeto en cuestion.
