@@ -150,7 +150,7 @@ Se diseñó el siguiente soporte para un gripper neumático, como se puede ver, 
 ![Gripper Neumático Diseñado](img/AdaptadorGripper.png)\
 Adaptador Gripper Neumático Diseñado
 
-A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encunetran en el siguiente [PDF](./Planos.pdf)
+A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encuentran en el siguiente [PDF](./Planos.pdf)
  
 ![Gripper Neumático 3D](img/Gripper3D.png)\
 Plano de vista isométrica con partes del gripper.
@@ -396,3 +396,13 @@ Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no tom
 </video>
 
 [Aquí se puede ver el video de la prueba con el Robot real:](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
+
+## Conclusiones
+
+* Con EPSON RC+ 7.0 se programó, simuló y corrió en el robot real: uso de Pallet 6×5, Jump y E/S digitales.
+
+* Se diseñó e integró un gripper por vacío y se validó la lógica: ON = liberar, OFF = agarrar.
+
+* Se implementó la trayectoria de tipo "caballo" alternando dos huevos, cubriendo las 30 posiciones, con impresión de estados y retorno y salida a Home.
+
+* Mejoras propuestas: ventosas más adecuadas, pequeños tiempos de espera, y sensor de vacío para confirmar agarre.
