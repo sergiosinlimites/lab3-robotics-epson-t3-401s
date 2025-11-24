@@ -165,7 +165,7 @@ ADD2 --> D
 
  ## Vista de planta
  <p align="center">
-    <img src="img/Top_view.PNG" width="800">
+    <img src="img/Top_view.png" width="800">
     </p>
 
 
