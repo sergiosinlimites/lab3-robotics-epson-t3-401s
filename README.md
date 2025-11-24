@@ -25,10 +25,10 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 1. Descripción de las configuraciones **Home** del **EPSON T3-401S**, indicando la posición de cada articulación.
 
     La posicion Home por defecto del Robot se puede configurar al gusto, nosotros seleccionamos una posicion en donde la posicion de la articulacion 1 es justo la mitad, permitiendole asi moverse en ambas direcciones como se muestra en la siguiente imagen:
-   ![Descripción del Home](img/Home_description.PNG)
+   ![Descripción del Home](img/Home_description.png)
 
    Las respectivas posiciones articulares se muestran en el siguiente cuadro tomado del software :
-    ![Descripción de Articulaciones del Home](img/Home_joints_values.PNG)
+    ![Descripción de Articulaciones del Home](img/Home_joints_values.png)
 
     **Aca es importante destacar que los valores articulares se miden en pulsos de encoder**
    
@@ -38,12 +38,12 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
     **Para esto se oprime F6 lo cual abre el robot manager**, una vez ahi se va a la parte de Jog and teach y alli se puede mover el robot por cualquiera de los metodos descritos previamente como se aprecia a continuacion:
     - Movimiento por articulaciones:
     <p align="center">
-    <img src="img/Joint_movement.PNG" width="600">
+    <img src="img/Joint_movement.png" width="600">
     </p>
 
     - Movimiento Cartesiano(espacio de la tarea):
     <p align="center">
-    <img src="img/Cartesian_movement.PNG" width="800">
+    <img src="img/Cartesian_movement.png" width="800">
     </p>
     Como se aprecia en la imagen las opciones de tool, world,Local y ECP permiten realizar movimientos cartesianos, recordando que al ser un robot de 4 grados de libertad(RRRP), no puede realizar rotaciones en torno a los ejes coordenados , solo moverse en XYZ y rotar en torno a Z(respecto a los globales).
 
@@ -51,11 +51,11 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 
 3 . Detallar los niveles de velocidad del **EPSON T3-401S** para movimientos manuales y su configuración.  Para detallar estos niveles de velocidad se tienen las siguientes configuraciones en el robot manager:
 <p align="center">
-    <img src="img/Power_levels.PNG" width="800">
+    <img src="img/Power_levels.png" width="800">
     </p>
 
  <p align="center">
-    <img src="img/Speed_levels.PNG" width="800">
+    <img src="img/Speed_levels.png" width="800">
     </p>
  
 
@@ -370,7 +370,7 @@ ADD2 --> D
 
  ## Vista de planta
  <p align="center">
-    <img src="img/Top_view.PNG" width="800">
+    <img src="img/Top_view.png" width="800">
     </p>
 
 
