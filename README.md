@@ -115,8 +115,26 @@ Este documento presenta una comparación detallada entre los robots utilizados e
 
 
 ## Características EPSON RC+ 7.0
-* Describir las diferencias entre los diferentes tipos de trayectorias disponibles en el sofware EPSON RC+ 7.0.
-* Explicar las aplicaciones principales de EPSON RC+ 7.0 y c´omo se comunica con el manipulador, ¿Qu´e hace EPSON RC+ 7.0 para mover el manipulador?
+
+### Tipos de trayectorias
+
+* Jump / Jump3 (trayectoria con arco): movimientos “en salto” que usan una tabla de arcos (Arch) con pares de parámetros Depart Z y Approach Z (siete presets editables en Robot Manager). 
+
+* CP/ECP (trayectoria de Punto Central): opción de movimiento CP On donde se controla el TCP relativo a un punto de control externo (ECP); se configura en Robot Manager ECP.
+
+* Curvas/Arcos (Arc/Curve): movimientos curvilíneos para interpolaciones suaves (arcos y curvas definidas por puntos), típicamente en modo CP/ECP.
+
+* Pallet (patrones de paletizado): definición de matrices (p.ej., 6×5) desde Robot Manager -> Pallets y uso del comando Pallet en el programa para indexar posiciones.
+
+### ¿Qué hace EPSON RC+ 7.0 para mover el manipulador?
+
+Lo que hace EPSON RC+ 7.0 es que se comunica con el controlador del robot por USB o Ethernet, soportando múltiples controladores e incluso sesiones simultáneas.
+
+Modos de operación del sistema:
+
+1. Esclavo: el controlador es gobernado por PC vía E/S o bus de campo.
+
+2. Independiente: el controlador gestiona robot y periféricos; RC+ muestra la ventana del operador en AUTO.
 
 ## Comparación RC+ 7.0, RobotStudio y RoboDK
 
