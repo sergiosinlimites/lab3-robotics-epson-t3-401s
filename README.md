@@ -117,8 +117,29 @@ Este documento presenta una comparación detallada entre los robots utilizados e
 * Explicar las aplicaciones principales de EPSON RC+ 7.0 y c´omo se comunica con el manipulador, ¿Qu´e hace EPSON RC+ 7.0 para mover el manipulador?
 
 ## Comparación RC+ 7.0, RobotStudio y RoboDK
-* Analizar las diferencias entre EPSON RC+ 7.0, RoboDK y RobotStudio y describir los usos espec´ıficos de cada herramienta, ¿Qu´e significa para usted cada una de esas herramientas?
-* Destacando ventajas, limitaciones y aplicaciones de cada herramienta.
+
+
+| **Criterio** | **RoboDK** | **RobotStudio** | **EPSON RC+ 7.0** |
+|-------------|------------|-----------------|--------------------|
+| **Fabricante / desarrollador** | RoboDK Inc. (Canadá) | ABB Robotics | Epson Robots (Seiko Epson Corporation) |
+| **Compatibilidad** | Multimarca (Yaskawa, ABB, KUKA, Fanuc, UR, etc.) | Exclusivo para robots ABB (aunque con más trabajo se pueden incluir otros) | Exclusivo para robots EPSON |
+| **Lenguaje de programación** | Python o bloques; genera código para INFORM, RAPID, KRL, etc. | RAPID | SPEL+ |
+| **Simulación** | 3D completa, cinemática, colisiones, tiempos de ciclo | 3D con Virtual Controller | Simulación 2D/3D EPSON |
+| **Comunicación con robot real** | Ethernet/IP, archivos .JBI/.mod | Conexión con IRC5/OmniCore | Conexión directa por Ethernet/USB |
+| **Precisión** | Alta (depende de postprocesador) | Muy alta | Alta para robots EPSON |
+| **Programación offline** | Sí | Sí | Sí (SPEL+) |
+| **Automatización** | Integración con visión y sensores | Librerías industriales | Visión EPSON, E/S digitales |
+| **Gemelo digital** | Sí | Requiere módulos extra | Simulación cercana al robot EPSON |
+| **Ventajas** | Multimarca, Python, fácil de usar | Integración total ABB | Integración nativa EPSON |
+| **Limitaciones** | Menor fidelidad si no está bien programado | Solo ABB | Solo EPSON |
+| **Aplicaciones típicas** | Docencia, investigación | Industria ABB | Industria EPSON |
+| **Licencia** | Gratuita + comercial | Comercial | Incluido con robots EPSON |
+
+RoboDK es flexible y multimarca, ideal para educación o uso en robots no tan comerciales. RobotStudio es el entorno oficial para ABB, con precisión industrial. EPSON RC+ 7.0 es el entorno nativo para robots EPSON, facilitando programación en SPEL+, configuración de E/S y simulación de trayectorias del T3‑401S.
+
+- **EPSON RC+ 7.0:** Herramienta principal en el laboratorio para T3‑401S. Nos permite programar, simular y controlar el robot real.
+- **RoboDK:** Software para experimentar con robots de múltiples marcas y robótica con Python.
+- **RobotStudio:** Es el más completo y avanzado de todos pero con la limitante de que solo funciona para robots de la marca ABB.
 
 ## Diseño Gripper
 * Dise˜nar un gripper neum´atico por vac´ıo utilizando las entradas y salidas digitales del robot EPSON T3-401S, que tenga la capacidad de levantar un huevo de manera segura y estable.
@@ -129,7 +150,7 @@ Se diseñó el siguiente soporte para un gripper neumático, como se puede ver, 
 ![Gripper Neumático Diseñado](img/AdaptadorGripper.png)\
 Adaptador Gripper Neumático Diseñado
 
-A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encuentran en el siguiente [PDF](./Planos.pdf)
+A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encunetran en el siguiente [PDF](./Planos.pdf)
  
 ![Gripper Neumático 3D](img/Gripper3D.png)\
 Plano de vista isométrica con partes del gripper.
